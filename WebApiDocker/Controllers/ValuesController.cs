@@ -24,6 +24,11 @@ namespace WebApiDocker.Controllers
             return "value";
         }
 
+        [HttpGet("GetHelloWorld")]
+        public ActionResult<string> GetHelloWorld()
+        {
+            return "HelloWorld!";
+        }
         // POST api/values
         [HttpPost]
         public void Post([FromBody] string value)
